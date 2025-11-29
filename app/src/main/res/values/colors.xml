@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#5DADE2</color>
+    <color name="colorPrimaryDark">#3498DB</color>
+    <color name="colorAccent">#BB8FCE</color>
+
+    <!-- Theme Colors -->
+    <color name="light_blue">#AED6F1</color>
+    <color name="pastel_purple">#D7BDE2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F8F9FA</color>
+    <color name="dark_gray">#34495E</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#52C41A</color>
+    <color name="warning_orange">#FA8C16</color>
+    <color name="error_red">#F5222D</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F0F4F8</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_white">#FFFFFF</color>
+    <!-- Tambahkan warna ini jika belum ada -->
+    <color name="light_green">#E8F5E9</color>
+    <color name="light_red">#FFEBEE</color>
+</resources>
