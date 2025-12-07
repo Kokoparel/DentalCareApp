@@ -1,6 +1,7 @@
 package com.example.dentalcareapp.app.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,9 +49,16 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,
-                        "Lihat detail: " + product.getName(),
-                        Toast.LENGTH_SHORT).show();
+                // KITA UBAH DARI TOAST MENJADI INTENT
+                Intent intent = new Intent(context, com.example.dentalcareapp.app.activities.ProductDetailActivity.class); // Pastikan path-nya benar
+
+                // Masukkan data ke dalam paket
+                intent.putExtra("p_name", product.getName());
+                intent.putExtra("p_category", product.getCategory());
+                intent.putExtra("p_price", product.getFormattedPrice());
+                intent.putExtra("p_rating", product.getRating());
+                intent.putExtra("p_desc", product.getDescription());
+                context.startActivity(intent);
             }
         });
     }

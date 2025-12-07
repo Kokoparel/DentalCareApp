@@ -53,6 +53,10 @@ public class DentistAdapter extends RecyclerView.Adapter<DentistAdapter.DentistV
                 intent.putExtra("dentist_name", dentist.getName());
                 intent.putExtra("dentist_specialization", dentist.getSpecialization());
                 intent.putExtra("dentist_rating", dentist.getRating());
+                intent.putExtra("dentist_availability", dentist.getAvailability());
+                intent.putExtra("dentist_clinic", dentist.getClinicName());
+                intent.putExtra("dentist_education", dentist.getEducation());
+                intent.putExtra("dentist_experience", dentist.getExperience());
                 context.startActivity(intent);
             }
         });

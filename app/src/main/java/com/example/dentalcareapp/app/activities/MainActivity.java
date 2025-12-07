@@ -1,5 +1,6 @@
 package com.example.dentalcareapp.app.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -54,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                     } else if (itemId == R.id.nav_habit) {
                         selectedFragment = new HabitTrackerFragment();
                     } else if (itemId == R.id.nav_products) {
-                        selectedFragment = new ProductFragment();
+                        Intent intent = new Intent(MainActivity.this, ShopActivity.class);
+                        startActivity(intent);
+                        return true; // Stop di sini biar gak lanjut load fragment
                     } else if (itemId == R.id.nav_profile) {
                         selectedFragment = new ProfileFragment();
                     }

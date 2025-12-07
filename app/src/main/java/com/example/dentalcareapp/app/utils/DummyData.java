@@ -14,30 +14,35 @@ public class DummyData {
         d1.setEducation("Universitas Sriwijaya");
         d1.setExperience("10 tahun");
         d1.setClinicName("Smile Dental Clinic");
+        d1.setAvailability("Senin, Rabu, Jumat (09:00 - 15:00)");
         dentists.add(d1);
 
         Dentist d2 = new Dentist("D002", "Dr. Putri Alisya Zhafirah", "Bedah Mulut", 4.9f, "dentist_2");
         d2.setEducation("Universitas Sriwijaya");
         d2.setExperience("12 tahun");
         d2.setClinicName("Dental Care Center");
+        d2.setAvailability("Senin, Kamis, Jumat (10:00 - 19:00)");
         dentists.add(d2);
 
-        Dentist d3 = new Dentist("D003", "Dr. Hakan Ilyasa", "Dokter Gigi Umum", 4.7f, "dentist_3");
+        Dentist d3 = new Dentist("D003", "Dr. Hakan Ilyasa", "Dokter Gigi Umum", 5f, "dentist_3");
         d3.setEducation("Universitas Sriwijaya");
-        d3.setExperience("8 tahun");
+        d3.setExperience("20 tahun");
         d3.setClinicName("Happy Teeth Clinic");
+        d3.setAvailability("Senin - Jum'at (08:00 - 15:00)");
         dentists.add(d3);
 
         Dentist d4 = new Dentist("D004", "Dr. Azka Hukma Tsabitah", "Periodonti", 4.9f, "dentist_4");
         d4.setEducation("Universitas Sriwijaya");
         d4.setExperience("15 tahun");
         d4.setClinicName("Elite Dental Care");
+        d4.setAvailability("Senin, Rabu, Kamis, Jum'at (09:00 - 15:00)");
         dentists.add(d4);
 
         Dentist d5 = new Dentist("D005", "Dr. Thalia Dyah Zaneta", "Endodonti", 4.6f, "dentist_5");
         d5.setEducation("Universitas Sriwijaya");
         d5.setExperience("7 tahun");
         d5.setClinicName("Bright Smile Clinic");
+        d5.setAvailability("Senin, Rabu, Kamis (09:00 - 14:00)");
         dentists.add(d5);
 
         return dentists;
@@ -69,32 +74,29 @@ public class DummyData {
     public static List<Product> getProducts() {
         List<Product> products = new ArrayList<>();
 
-        products.add(new Product("P001", "Pasta Gigi Whitening Pro",
-                "Pasta Gigi", 45000, 4.7f, "toothpaste_1"));
+        Product p1 = new Product("P001", "Pasta Gigi Whitening Pro", "Pasta Gigi", 45000, 4.7f, "toothpaste_1");
+        p1.setDescription("Pasta gigi pemutih dengan teknologi micro-crystals yang ampuh mengangkat noda kuning pada gigi dalam 7 hari pemakaian rutin. Aman untuk enamel gigi.");
+        products.add(p1);
 
-        products.add(new Product("P002", "Sikat Gigi Elektrik SmartBrush",
-                "Sikat Gigi", 350000, 4.9f, "toothbrush_1"));
+        Product p2 = new Product("P002", "Sikat Gigi Elektrik SmartBrush", "Sikat Gigi", 350000, 4.9f, "toothbrush_1");
+        p2.setDescription("Sikat gigi pintar dengan timer otomatis 2 menit dan sensor tekanan agar gusi tidak terluka. Baterai tahan hingga 30 hari.");
+        products.add(p2);
 
-        products.add(new Product("P003", "Benang Gigi Mint Fresh",
-                "Benang Gigi", 25000, 4.5f, "floss_1"));
+        Product p3 = new Product("P003", "Benang Gigi Mint Fresh", "Benang Gigi", 25000, 4.5f, "floss_1");
+        p3.setDescription("Benang gigi rasa mint yang kuat dan tidak mudah putus. Efektif membersihkan sisa makanan di sela-sela gigi yang sempit.");
+        products.add(p3);
 
-        products.add(new Product("P004", "Mouthwash Antibakteri 500ml",
-                "Obat Kumur", 55000, 4.6f, "mouthwash_1"));
+        Product p4 = new Product("P004", "Mouthwash Antibakteri 500ml", "Obat Kumur", 55000, 4.6f, "mouthwash_1");
+        p4.setDescription("Obat kumur tanpa alkohol yang membunuh 99% kuman penyebab bau mulut. Memberikan kesegaran nafas sepanjang hari.");
+        products.add(p4);
 
-        products.add(new Product("P005", "Pasta Gigi Anak Rasa Strawberry",
-                "Pasta Gigi", 30000, 4.8f, "toothpaste_2"));
-
-        products.add(new Product("P006", "Sikat Gigi Bamboo Eco-Friendly",
-                "Sikat Gigi", 40000, 4.7f, "toothbrush_2"));
-
-        products.add(new Product("P007", "Tongue Cleaner Stainless",
-                "Pembersih Lidah", 20000, 4.4f, "tongue_cleaner"));
-
-        products.add(new Product("P008", "Dental Floss Picks 50pcs",
-                "Benang Gigi", 35000, 4.6f, "floss_2"));
+        Product p5 = new Product("P005", "Pasta Gigi Anak Rasa Strawberry", "Pasta Gigi", 30000, 4.8f, "toothpaste_2");
+        p5.setDescription("Pasta gigi khusus anak dengan rasa buah yang disukai si kecil. Mengandung fluoride takaran rendah yang aman jika tertelan sedikit.");
+        products.add(p5);
 
         return products;
     }
+
 
     // Dummy Clinics
     public static List<Clinic> getClinics() {

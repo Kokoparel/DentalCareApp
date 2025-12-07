@@ -14,7 +14,7 @@ import com.example.dentalcareapp.app.R;
 public class DentistDetailActivity extends AppCompatActivity {
 
     private ImageView dentistPhoto;
-    private TextView dentistName, specialization, education, experience, clinicName;
+    private TextView dentistName, specialization, education, experience, clinicName, availibilityText;
     private RatingBar ratingBar;
     private TextView ratingText;
     private Button bookButton, callButton;
@@ -41,6 +41,7 @@ public class DentistDetailActivity extends AppCompatActivity {
         education = findViewById(R.id.education);
         experience = findViewById(R.id.experience);
         clinicName = findViewById(R.id.clinicName);
+        availibilityText = findViewById(R.id.availability);
         ratingBar = findViewById(R.id.ratingBar);
         ratingText = findViewById(R.id.ratingText);
         bookButton = findViewById(R.id.bookButton);
@@ -52,12 +53,17 @@ public class DentistDetailActivity extends AppCompatActivity {
         String name = intent.getStringExtra("dentist_name");
         String spec = intent.getStringExtra("dentist_specialization");
         float rating = intent.getFloatExtra("dentist_rating", 0f);
+        String avail = intent.getStringExtra("dentist_availability");
+        String clinic = intent.getStringExtra("dentist_clinic");
+        String edu = intent.getStringExtra("dentist_education");
+        String exp = intent.getStringExtra("dentist_experience");
 
         dentistName.setText(name);
         specialization.setText(spec);
-        education.setText("Universitas Indonesia");
-        experience.setText("10+ tahun pengalaman");
-        clinicName.setText("Smile Dental Clinic");
+        education.setText(edu);
+        experience.setText(exp);
+        clinicName.setText(clinic);
+        availibilityText.setText(avail);
         ratingBar.setRating(rating);
         ratingText.setText(String.format("%.1f (120 reviews)", rating));
 

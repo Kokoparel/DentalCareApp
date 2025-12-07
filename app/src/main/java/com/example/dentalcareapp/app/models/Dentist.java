@@ -24,12 +24,19 @@ public class Dentist {
     public String getId() { return id; }
     public String getName() { return name; }
     public String getSpecialization() { return specialization; }
+
+    public String getEducation() { return education; }
+
+    public String getExperience() { return experience; }
     public float getRating() { return rating; }
     public String getPhotoUrl() { return photoUrl; }
     public String getClinicName() { return clinicName; }
+    public String getAvailability() {return availability; }
 
     // Setters
     public void setExperience(String experience) { this.experience = experience; }
+
     public void setEducation(String education) { this.education = education; }
     public void setClinicName(String clinicName) { this.clinicName = clinicName; }
+    public void setAvailability(String availability) { this.availability = availability; }
 }

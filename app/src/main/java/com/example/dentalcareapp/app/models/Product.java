@@ -26,8 +26,13 @@ public class Product {
     public double getPrice() { return price; }
     public float getRating() { return rating; }
     public String getImageUrl() { return imageUrl; }
-
+    public String getDescription() { return description; }
     public String getFormattedPrice() {
         return "Rp " + String.format("%,.0f", price);
+    }
+
+    //Setter
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
